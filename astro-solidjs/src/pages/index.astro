@@ -1,0 +1,23 @@
+---
+import Layout from '@layouts/Layout.astro'
+
+import Counter from '@components/Counter';
+
+---
+
+<Layout
+  title="Astro + SolidJS Starter Template"
+  description="Astro, SolidJS Starter Template.">
+
+  <main class="main">
+    <Counter client:load />
+  </main>
+</Layout>
+
+<style>
+  .main {
+    box-sizing: border-box;
+    height: 100svh;
+    padding: 2rem;
+  }
+</style>
